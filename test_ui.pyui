@@ -37,13 +37,13 @@
         "class" : "Label",
         "attributes" : {
           "name" : "labe",
-          "background_color" : "RGBA(0.900000,1.000000,0.900000,1.000000)",
+          "alignment" : "center",
           "frame" : "{{85, 144}, {150, 32}}",
           "uuid" : "B34EAC80-51BD-4B01-967C-BB91FD5DA4EC",
           "class" : "Label",
-          "border_color" : "RGBA(0.900000,1.000000,0.933333,1.000000)",
           "text" : "room_id",
-          "alignment" : "center",
+          "background_color" : "RGBA(0.900000,1.000000,0.900000,1.000000)",
+          "border_color" : "RGBA(0.900000,1.000000,0.933333,1.000000)",
           "font_size" : 18,
           "font_name" : "UbuntuMono-Bold"
         },
@@ -60,12 +60,12 @@
           "font_name" : "UbuntuMono-Bold",
           "frame" : "{{85, 144}, {150, 32}}",
           "uuid" : "B34EAC80-51BD-4B01-967C-BB91FD5DA4EC",
-          "background_color" : "RGBA(0.900000,1.000000,0.900000,1.000000)",
           "class" : "Label",
-          "border_color" : "RGBA(0.900000,1.000000,0.933333,1.000000)",
+          "alignment" : "center",
           "text" : "time",
+          "background_color" : "RGBA(0.900000,1.000000,0.900000,1.000000)",
           "name" : "labe",
-          "alignment" : "center"
+          "border_color" : "RGBA(0.900000,1.000000,0.933333,1.000000)"
         },
         "selected" : false
       },
@@ -94,7 +94,7 @@
           "name" : "time",
           "font_size" : 17
         },
-        "selected" : true
+        "selected" : false
       },
       {
         "nodes" : [
@@ -111,8 +111,8 @@
           "class" : "Button",
           "border_color" : "RGBA(0.232704,0.232704,0.436321,1.000000)",
           "font_bold" : false,
-          "name" : "button1",
-          "font_size" : 24
+          "font_size" : 24,
+          "name" : "button1"
         },
         "selected" : false
       },
@@ -124,7 +124,7 @@
         "class" : "Button",
         "attributes" : {
           "alpha" : 0.29999999999999999,
-          "action" : "",
+          "action" : "send_data",
           "frame" : "{{120, 144}, {80, 32}}",
           "title" : "",
           "uuid" : "95776507-9DA5-4788-A62F-F05D0BC22920",
@@ -133,7 +133,7 @@
           "name" : "button2",
           "font_size" : 15
         },
-        "selected" : false
+        "selected" : true
       },
       {
         "nodes" : [
@@ -304,23 +304,6 @@
         "nodes" : [
 
         ],
-        "frame" : "{{55.000000000000028, 156}, {80, 32}}",
-        "class" : "Button",
-        "attributes" : {
-          "frame" : "{{122, 105}, {80, 32}}",
-          "title" : "del",
-          "uuid" : "5BB72441-10A7-40EE-A4F5-DA84CB990A18",
-          "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
-          "class" : "Button",
-          "name" : "button4",
-          "font_size" : 15
-        },
-        "selected" : false
-      },
-      {
-        "nodes" : [
-
-        ],
         "frame" : "{{13, 156}, {30, 30}}",
         "class" : "Button",
         "attributes" : {
@@ -332,6 +315,82 @@
           "class" : "Button",
           "name" : "button3",
           "font_size" : 15
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{169, 74}, {25, 26}}",
+        "class" : "Button",
+        "attributes" : {
+          "alpha" : 0.5,
+          "action" : "room_off",
+          "image_name" : "iob:arrow_right_a_24",
+          "frame" : "{{122, 105}, {80, 32}}",
+          "title" : "b",
+          "uuid" : "A2493D55-9C09-49E4-B650-1ACD749ABEBD",
+          "class" : "Button",
+          "name" : "time_flg",
+          "font_size" : 15
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{169, 26}, {25, 26}}",
+        "class" : "Button",
+        "attributes" : {
+          "alpha" : 0.5,
+          "action" : "room_on",
+          "font_size" : 15,
+          "frame" : "{{122, 105}, {80, 32}}",
+          "title" : "b",
+          "uuid" : "A2493D55-9C09-49E4-B650-1ACD749ABEBD",
+          "class" : "Button",
+          "name" : "time_flg",
+          "image_name" : "iob:arrow_right_a_24"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{285, 26}, {25, 26}}",
+        "class" : "Button",
+        "attributes" : {
+          "alpha" : 0.5,
+          "action" : "room_del",
+          "image_name" : "iob:close_24",
+          "frame" : "{{122, 105}, {80, 32}}",
+          "title" : "b",
+          "uuid" : "A2493D55-9C09-49E4-B650-1ACD749ABEBD",
+          "class" : "Button",
+          "font_size" : 15,
+          "name" : "time_flg"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{285, 74}, {25, 26}}",
+        "class" : "Button",
+        "attributes" : {
+          "alpha" : 0.5,
+          "action" : "time_del",
+          "image_name" : "iob:close_24",
+          "frame" : "{{122, 105}, {80, 32}}",
+          "title" : "b",
+          "uuid" : "A2493D55-9C09-49E4-B650-1ACD749ABEBD",
+          "class" : "Button",
+          "font_size" : 15,
+          "name" : "time_flg"
         },
         "selected" : false
       }
