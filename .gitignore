@@ -1,2 +1,4 @@
 aut_pass-ver0.9.py
 dist
+
+__pycache__
