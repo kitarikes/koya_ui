@@ -53,7 +53,7 @@ def numberButtonAction(event_nds):
     d = check_input(room_obj, is_room)
     global inputNumber
     inputNumber = inputNumber +event_nds.title
-    d.text = convNumber(inputNumber)
+    d.text = inputNumber
 
 
 #ACボタンに割り当てる処理
@@ -81,7 +81,7 @@ def send_data(event_nds):
 	 time_ = sv['time'].text
 	 
 	 with open('tmp.txt', 'w') as f:
-	     f.write(f'room, {room_}\ntime, {time_}')
+	     f.write(f'room,{room_}\ntime,{time_}')
 	 if (room_ and time_):
 	     console.alert(f'room -> {room_}\ntime -> {time_}')
 	  
